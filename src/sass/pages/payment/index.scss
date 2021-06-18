@@ -39,5 +39,20 @@
 					}
 			}
 		}
+		.section-banner{
+			@include d(991){
+				position: absolute;
+				height: 70vw;
+			}
+		}
+		@include d(991){
+			padding-top: calc(70vw + 50px);
+		}
+		@include d(575){
+			padding-top: calc(70vw + 50px);
+		}
+		@include d(480){
+			padding-top: calc(70vw + 50px);
+		}
 	}
 }

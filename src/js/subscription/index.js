@@ -2,9 +2,15 @@ const form = document.querySelector('#subscription');
 const subscriptionContent = document.querySelector('.subscription-content');
 
 if(!!form) {
+	const messageYPosition = document.querySelector('.subscription-content-alert').getBoundingClientRect().y;
+
 	form.addEventListener('submit', function (e) {
 		e.preventDefault();
 		subscriptionContent.classList.add('sending');
+		window.scrollTo({
+			top: parseInt(messageYPosition),
+			behavior: 'smooth',
+		})
 		setTimeout(function () {
 			subscriptionContent.classList.add('start');
 		}, 100);
