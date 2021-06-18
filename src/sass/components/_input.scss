@@ -86,6 +86,8 @@
 			border-radius: 10px;
 		}
 		&-phone{
+			font-size: 14px;
+			font-family: var(--font-body);
 			width: 100%;
 			background-color: transparent;
 			border: none;
@@ -99,24 +101,13 @@
 				&:focus{
 					outline: none;
 				}
-				//&::-webkit-input-placeholder {
-				//	color: #838383;
-				//}
-				//&::-moz-placeholder {
-				//	color: #838383;
-				//}
-				//&:-ms-input-placeholder {
-				//	color: #838383;
-				//}
-				//&:-moz-placeholder {
-				//	color: #838383;
-				//}
 		}
 		&-code{
 			padding-left: 35px;
 			white-space: nowrap;
 			line-height: 48px;
 			cursor: pointer;
+			font-size: 14px;
 		}
 		&-flag{
 			position: absolute;
