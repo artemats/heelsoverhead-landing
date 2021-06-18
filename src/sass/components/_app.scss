@@ -1,0 +1,234 @@
+body{
+	color: var(--color-black);
+	font-size: 14px;
+	font-family: var(--font-body);
+	line-height: 1.571em;
+		@include d(480){
+			font-size: 12px;
+		}
+}
+
+#wrapper{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding: 0 15px;
+	max-width: 1342px;
+	width: 90%;
+		@include d(480){
+			width: 100%;
+			padding: 0 30px;
+		}
+}
+
+.section{
+	overflow: hidden;
+	position: relative;
+		&-abstract{
+			position: absolute;
+			font-size: 288px;
+			font-family: var(--font-title);
+			color: var(--color-grey);
+			line-height: 1em;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			white-space: nowrap;
+			pointer-events: none;
+				@include d(1420){
+					font-size: 240px;
+				}
+				@include d(1200){
+					font-size: 200px;
+				}
+				@include d(991){
+					top: 200px;
+					transform: none;
+				}
+				@include d(575){
+					font-size: 160px;
+				}
+				@include d(480){
+					font-size: 120px;
+					top: 150px;
+				}
+		}
+		&-banner{
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: rgba(0,0,0,.2);
+					pointer-events: none;
+				}
+				&.__right{
+					left: auto;
+					right: 0;
+						&:before{
+							background-color: rgba(0,0,0,.4);
+						}
+						@include d(575){
+							height: 90vw;
+						}
+				}
+				img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+				@include d(991){
+					position: relative;
+					width: 100%;
+					margin-bottom: -7px;
+				}
+		}
+}
+
+.row{
+	display: flex;
+		&-column{
+			flex: 1;
+		}
+}
+
+.list{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+		&-item{
+			display: flex;
+			align-items: center;
+			margin-bottom: 16px;
+			transition: opacity .6s ease, transform .6s ease;
+				&-title{
+
+				}
+				&-icon{
+					margin-right: 23px;
+					width: 34px;
+					height: 34px;
+					min-width: 34px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				@for $i from 1 through 9 {
+					&:nth-child(#{$i}) {
+						transition-delay: $i * 0.1 + s;
+					}
+				}
+		}
+}
+
+.price{
+	&-new{
+		display: inline-block;
+		color: var(--color-orange);
+		white-space: nowrap;
+		margin-bottom: 10px;
+		transition: opacity .6s ease, transform .6s ease;
+	}
+	&-old{
+		display: inline-block;
+		position: relative;
+		margin-right: 20px;
+		white-space: nowrap;
+		margin-bottom: 10px;
+		transition: opacity .6s ease, transform .6s ease;
+		transition-delay: .1s;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				background-color: var(--color-orange);
+				top: 50%;
+				margin-top: -2px;
+			}
+	}
+}
+
+.alert-icon{
+	width: 93px;
+	height: 93px;
+	margin-bottom: 28px;
+		@include d(767){
+			width: 80px;
+			height: 80px;
+		}
+		@include d(575){
+			width: 70px;
+			height: 70px;
+		}
+		@include d(480){
+			width: 66px;
+			height: 66px;
+		}
+}
+
+.progress{
+	height: 5px;
+	width: 360px;
+	margin: 0 auto 36px;
+	background-color: var(--color-grey);
+	border-radius: 14px;
+	overflow: hidden;
+	position: relative;
+		&-line{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 0;
+			transition: width 1s ease;
+			background-color: var(--color-orange);
+			border-radius: 14px;
+		}
+		@include d(767){
+			width: 280px;
+			height: 4px;
+		}
+		@include d(420){
+			width: 100%;
+		}
+}
+
+.scale{
+	overflow: hidden;
+		picture, img{
+			transition: transform 1s ease-out, opacity 1s ease-out;
+		}
+}
+
+//.loading .header{
+//	opacity: 0;
+//}
+//.loading .h-1 i,
+//.loading .h-1 strong,
+//.loading .h-1 b,
+//.loading .h-1 span,
+//.loading .h-4,
+//.loading .tabs,
+//.loading .hero li,
+//.loading .hero .list-item,
+//.loading .price-new,
+//.loading .price-old,
+//.loading .hero.__inner .hero-content .btn{
+//	opacity: 0;
+//	transform: translateY(3px);
+//}

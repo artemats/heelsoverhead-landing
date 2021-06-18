@@ -1,0 +1,43 @@
+.hero{
+	&.__payment{
+		.row{
+			justify-content: flex-end;
+		}
+		.hero{
+			&-content{
+				padding-left: 128px;
+				justify-content: flex-start;
+				padding-top: 160px;
+					.btn{
+						margin-top: 0;
+					}
+					.row{
+							&-column{
+								&:not(:last-child){
+									padding-right: 30px;
+										@include d(480){
+											padding-right: 0;
+										}
+								}
+							}
+							@include d(991){
+								flex-direction: row;
+							}
+							@include d(480){
+								flex-direction: column;
+							}
+					}
+					@include d(1420){
+						padding-left: 90px;
+					}
+					@include d(1200){
+						padding-left: 50px;
+					}
+					@include d(991){
+						padding-left: 0;
+						padding-top: 0;
+					}
+			}
+		}
+	}
+}

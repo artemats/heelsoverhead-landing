@@ -1,0 +1,11 @@
+.hero{
+		&.__success{
+			@extend .__payment;
+				.hero{
+					&-content{
+						justify-content: center;
+						padding-top: 0;
+					}
+				}
+		}
+}

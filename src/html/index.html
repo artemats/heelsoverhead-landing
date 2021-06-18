@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<title>Get your free Healthy Dinner Recipes</title>
+
+	<link rel="preload" href="fonts/ArkibalDisplay-RegularItalic.woff" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/ArkibalDisplay-RegularItalic.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/ArkibalDisplay-Heavy-Italic.woff" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/ArkibalDisplay-Heavy-Italic.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Sacramento-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Sacramento-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+
+	<style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs{opacity:0;transform:translateY(3px)}</style>
+
+</head>
+<body>
+<main id="wrapper" class="loading">
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="header-logo">
+				<img src="../images/logo.svg" alt="Fit with her | By Marni Nicole" />
+			</a>
+		</div>
+	</header>
+	<section class="section hero">
+		<div class="section-abstract">Fit With Her Fit With Her</div>
+		<div class="container">
+			<div class="row">
+				<div class="row-column">
+					<div class="hero-content">
+						<h1 class="h-1"><i>Get your</i> <strong>Free</strong> <span>Healthy Dinner Recipes</span></h1>
+						<ul>
+							<li>Dietitian created</li>
+							<li>Quick & easy</li>
+							<li>Taste tested by kids</li>
+							<li>Delicious and affordable</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row-column">
+					<div class="hero-banner scale">
+						<picture>
+							<source srcset="../images/home/banner.webp" type="image/webp">
+							<source srcset="../images/home/banner.jpg" type="image/jpg">
+							<img src="../images/home/banner.jpg" alt="Get your free Healthy Dinner Recipes">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section subscription">
+		<div class="container">
+			<div class="row">
+				<div class="row-column">
+					<div class="subscription-banner">
+						<picture>
+							<source srcset="../images/home/banner-subscription.webp" type="image/webp">
+							<source srcset="../images/home/banner-subscription.jpg" type="image/jpg">
+							<img src="../images/home/banner-subscription.jpg" alt="Get your free Healthy Dinner Recipes">
+						</picture>
+					</div>
+				</div>
+				<div class="row-column">
+					<div class="subscription-content">
+						<div class="subscription-content-form">
+							<h2 class="h-2">Choose your <strong>food preferences</strong> and <strong>enter your email:</strong></h2>
+							<div class="form">
+							<form id="subscription">
+								<div class="form-row">
+									<div class="form-row-column">
+										<div class="input-container-group">
+											<label class="input-container __radio">
+												<input
+													type="checkbox"
+													class="input-radio"
+													name="Regular (no food restrictions)"
+													id="preference_1" />
+												<span class="input-radio-icon"></span>
+												<span class="input-radio-title">Regular (no food restrictions)</span>
+											</label>
+											<label class="input-container __radio">
+												<input
+													type="checkbox"
+													class="input-radio"
+													name="Vegetarian"
+													id="preference_2" />
+												<span class="input-radio-icon"></span>
+												<span class="input-radio-title">Vegetarian</span>
+											</label>
+											<label class="input-container __radio">
+												<input
+													type="checkbox"
+													class="input-radio"
+													name="Vegan"
+													id="preference_3" />
+												<span class="input-radio-icon"></span>
+												<span class="input-radio-title">Vegan</span>
+											</label>
+											<label class="input-container __radio">
+											<input
+												type="checkbox"
+												class="input-radio"
+												name="Gluten free"
+												id="preference_4" />
+											<span class="input-radio-icon"></span>
+											<span class="input-radio-title">Gluten free</span>
+										</label>
+										</div>
+									</div>
+									<div class="form-row-column">
+										<label class="input-container">
+											<input
+												type="text"
+												class="input input-white"
+												name="firstname"
+												placeholder="First name" />
+										</label>
+										<label class="input-container">
+											<input
+												type="text"
+												class="input input-white"
+												name="lastname"
+												placeholder="Last name" />
+										</label>
+										<div class="input-container input-code-phone">
+											<span class="input-flag">
+												<img src="https://www.countryflags.io/au/flat/16.png" id="country-flag" alt="" />
+											</span>
+											<input type="hidden" id="phone-code" />
+											<span class="input-code dropdown-trigger" data-dropdown="0" id="country-code">+61</span>
+											<input type="number" class="input-phone" placeholder="___ ___ ___" />
+											<div class="dropdown-menu" data-dropdown="0">
+												<div class="dropdown-menu-list" id="country-codes"></div>
+											</div>
+											<div class="input-dropdown dropdown-trigger" data-dropdown="0"></div>
+										</div>
+										<label class="input-container">
+											<input
+												type="email"
+												class="input input-white"
+												name="email"
+												placeholder="E-mail" />
+										</label>
+										<button type="submit" class="btn">Get free Recipes</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						</div>
+						<div class="subscription-content-alert">
+							<img src="../images/home/letter.svg" alt="Recipes being sent." class="alert-icon" />
+							<div class="progress">
+								<div class="progress-line"></div>
+							</div>
+							<h3 class="h-3">Recipes being sent. <br />
+								Check your inbox (or junk) folder.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="row-column">
+					<a href="index.html" class="footer-logo">
+						<img src="../images/logo-white.svg" alt="Fit with her | By Marni Nicole" />
+					</a>
+				</div>
+				<div class="row-column">
+					<div class="footer-contacts">
+						<div class="row">
+							<div class="row-column">
+								<div class="footer-contacts-box">
+									<p class="footer-title">Follow Us</p>
+									<div class="social">
+										<a href="https://www.instagram.com/" class="social-link" target="_blank">
+											<img src="../images/icons/instagram.svg" alt="Instagram" class="social-link-icon" />
+											<img src="../images/icons/instagram-hover.svg" alt="Instagram" class="social-link-icon __active" />
+										</a>
+										<a href="https://www.facebook.com/" class="social-link" target="_blank">
+											<img src="../images/icons/facebook.svg" alt="Facebook" class="social-link-icon" />
+											<img src="../images/icons/facebook-hover.svg" alt="Facebook" class="social-link-icon __active" />
+										</a>
+										<a href="https://twitter.com/" class="social-link" target="_blank">
+											<img src="../images/icons/twitter.svg" alt="Facebook" class="social-link-icon" />
+											<img src="../images/icons/twitter-hover.svg" alt="Facebook" class="social-link-icon __active" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row-column">
+								<div class="footer-contacts-box">
+									<p class="footer-title">Contacts</p>
+									<a href="mailto:hello@FitWithHer.com" class="footer-link">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.18839 5.54766C4.43231 6.59376 6.61499 8.43415 7.25651 9.00799C7.34262 9.08544 7.43499 9.12481 7.53088 9.12481C7.62658 9.12481 7.71879 9.08581 7.80472 9.00873C8.44678 8.43433 10.6295 6.59376 11.8734 5.54766C11.9508 5.48266 11.9626 5.3684 11.8999 5.28893C11.755 5.10529 11.5389 5 11.3073 5H3.75448C3.52289 5 3.30677 5.10529 3.16184 5.28895C3.09914 5.3684 3.11095 5.48266 3.18839 5.54766Z" />
+											<path d="M11.9539 6.11453C11.887 6.08359 11.8082 6.09438 11.7526 6.14163C10.3731 7.30288 8.61249 8.79136 8.05856 9.28701C7.74766 9.56569 7.31618 9.56569 7.00455 9.28664C6.41412 8.75838 4.43703 7.08937 3.31094 6.14161C3.25488 6.09436 3.17596 6.08394 3.10958 6.11451C3.04285 6.14529 3.00006 6.21158 3.00006 6.28463V11C3.00006 11.4136 3.33879 11.75 3.75535 11.75H11.3082C11.7247 11.75 12.0634 11.4136 12.0634 11V6.28463C12.0634 6.21158 12.0207 6.14511 11.9539 6.11453Z" />
+										</svg>
+										hello@FitWithHer.com
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="row-column">
+						<div class="copyright-title">
+							<p>&copy; 2021 Fit With Her™. All Right Reserved. </p>
+						</div>
+					</div>
+					<div class="row-column">
+						<div class="copyright-nav">
+							<a href="https://docs.google.com/document/d/1bY17JunxDPOybRmgKqaFgWWMwXlcVnmWGNIVcWpYHGQ/edit" target="_blank">Policies</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</main>
+</body>
+</html>

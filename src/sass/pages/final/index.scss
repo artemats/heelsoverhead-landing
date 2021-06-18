@@ -1,0 +1,75 @@
+.hero{
+	&.__inner{
+		.hero{
+			&-content{
+				height: 100vh;
+				min-height: 800px;
+				padding-bottom: 0;
+				padding-top: 45px;
+					&.__default{
+						padding-top: 0;
+						padding-bottom: 42px;
+							@include d(991){
+								padding-right: 0;
+								align-items: center;
+								padding-bottom: 0;
+								margin-bottom: -30px;
+							}
+					}
+					.list{
+						max-width: 450px;
+						margin: 38px 0 41px;
+						padding-left: 4px;
+							@include d(991){
+								max-width: 100%;
+							}
+					}
+					.btn{
+						margin-top: 45px;
+						transition: opacity .6s ease, transform .6s ease;
+							@include d(480){
+								margin-top: 20px;
+							}
+					}
+					@include max-height-min-width(800, 991) {
+						padding-top: 105px;
+					}
+					@include d(1200){
+						min-height: 900px;
+					}
+					@include d(991){
+						min-height: 0;
+						height: auto;
+						padding-top: 0;
+						padding-bottom: 40px;
+					}
+			}
+		}
+		.row{
+			&-column{
+				&:nth-child(1){
+					max-width: 50%;
+						@include d(991){
+							max-width: 100%;
+						}
+				}
+			}
+		}
+		.h-4{
+			transition: opacity .4s ease, transform .4s ease;
+		}
+	}
+	&.__final{
+		.section-banner{
+			img{
+				object-position: 85% center;
+					@include d(1300){
+						object-position: 70% center;
+					}
+					@include d(991){
+						object-position: center;
+					}
+			}
+		}
+	}
+}
