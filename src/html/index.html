@@ -116,38 +116,46 @@
 										</div>
 									</div>
 									<div class="form-row-column">
-										<label class="input-container">
+										<label class="input-container form-group">
 											<input
 												type="text"
 												class="input input-white"
 												name="firstname"
-												placeholder="First name" />
+												placeholder="First name"
+												required />
 										</label>
-										<label class="input-container">
+										<label class="input-container form-group">
 											<input
 												type="text"
 												class="input input-white"
 												name="lastname"
-												placeholder="Last name" />
+												placeholder="Last name"
+												required />
 										</label>
-										<div class="input-container input-code-phone">
+										<div class="input-container form-group input-code-phone">
 											<span class="input-flag">
 												<img src="https://www.countryflags.io/au/flat/16.png" id="country-flag" alt="" />
 											</span>
 											<input type="hidden" name="phone-code" id="phone-code" />
 											<span class="input-code dropdown-trigger" data-dropdown="0" id="country-code">+61</span>
-											<input type="number" name="phone" class="input-phone" placeholder="___ ___ ___" />
+											<input
+												type="number"
+												name="phone"
+												class="input-phone"
+												placeholder="___ ___ ___"
+												required />
 											<div class="dropdown-menu" data-dropdown="0">
 												<div class="dropdown-menu-list" id="country-codes"></div>
 											</div>
 											<div class="input-dropdown dropdown-trigger" data-dropdown="0"></div>
 										</div>
-										<label class="input-container">
+										<label class="input-container form-group">
 											<input
 												type="email"
 												class="input input-white"
 												name="email"
-												placeholder="E-mail" />
+												placeholder="E-mail"
+												required />
 										</label>
 										<button type="submit" class="btn">Get free Recipes</button>
 									</div>

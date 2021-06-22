@@ -27,6 +27,11 @@
 					padding-left: 32px;
 					padding-bottom: 18px;
 				}
+				&.has-danger{
+					.input{
+						border-color: var(--color-orange);
+					}
+				}
 		}
 		&-label{
 			display: inline-block;
@@ -84,6 +89,9 @@
 			margin-bottom: 20px;
 			border: 1px var(--color-white) solid;
 			border-radius: 10px;
+				.text-help{
+					bottom: -22px;
+				}
 		}
 		&-phone{
 			font-size: 14px;
@@ -145,4 +153,16 @@
 
 select{
 	width: 100%;
+}
+
+.text-help{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	font-family: var(--font-body);
+}
+
+.pristine-error{
+	color: var(--color-orange);
 }

@@ -27,6 +27,7 @@
     "postcss": "^8.3.4",
     "postcss-loader": "^4.0.4",
     "postcss-preset-env": "^6.7.0",
+    "pristinejs": "^0.1.9",
     "sass": "^1.35.1",
     "sass-loader": "^10.0.3",
     "style-loader": "^2.0.0",
