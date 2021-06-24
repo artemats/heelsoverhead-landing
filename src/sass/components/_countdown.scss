@@ -1,5 +1,5 @@
 .countdown{
-	padding-left: 153px;
+	padding-left: 100px;
 	color: var(--color-white);
 		&-title{
 			position: relative;
@@ -50,11 +50,17 @@
 			font-family: var(--font-title);
 			display: inline-block;
 			line-height: .96em;
-				@include d(991){
+				@include d(1420){
 					font-size: 52px;
+					width: 66px;
 				}
 				@include d(575){
 					font-size: 42px;
+					width: 50px;
+				}
+				@include d(480){
+					font-size: 32px;
+					width: 44px;
 				}
 		}
 		&-label{
