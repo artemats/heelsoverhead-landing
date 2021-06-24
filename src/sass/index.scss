@@ -11,6 +11,7 @@ Settings
 /*
 Libs
  */
+@import "../../node_modules/choices.js/public/assets/styles/choices.min.css";
 
 /*
 Components
@@ -26,6 +27,7 @@ Components
 @import "components/countdown";
 @import "components/tabs";
 @import "components/dropdown";
+@import "components/select";
 
 /*
 Pages

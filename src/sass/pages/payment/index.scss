@@ -8,6 +8,8 @@
 				padding-left: 128px;
 				justify-content: flex-start;
 				padding-top: 160px;
+				padding-bottom: 120px;
+				min-height: 900px;
 					.btn{
 						margin-top: 0;
 					}
@@ -36,6 +38,7 @@
 					@include d(991){
 						padding-left: 0;
 						padding-top: 0;
+						min-height: 600px;
 					}
 			}
 		}
@@ -55,4 +58,19 @@
 			padding-top: calc(70vw + 50px);
 		}
 	}
+}
+
+.payment{
+		&-detail{
+			display: flex;
+			align-items: center;
+			margin-bottom: 25px;
+				&-icon{
+					width: 80px;
+					margin-right: 20px;
+				}
+				&-title{
+					font-size: 14px;
+				}
+		}
 }

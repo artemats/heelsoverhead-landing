@@ -17,6 +17,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
+    "choices.js": "^9.0.1",
     "css-loader": "^3.6.0",
     "css-minimizer-webpack-plugin": "^1.1.5",
     "cssnano": "^5.0.6",

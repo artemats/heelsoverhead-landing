@@ -5,6 +5,21 @@
 					&-content{
 						justify-content: center;
 						padding-top: 0;
+							.h-1,
+							.h-2{
+								color: var(--color-orange);
+								margin-bottom: 15px;
+									i{
+										margin-bottom: 0;
+									}
+							}
+							p{
+								max-width: 420px;
+								font-family: var(--font-title);
+							}
+							.btn{
+								margin-top: 20px;
+							}
 					}
 				}
 		}

@@ -5,6 +5,7 @@ import './tabs/index';
 // import './subscription/index';
 import './validation/index';
 import './imagesSelect/index';
+import './select/index';
 
 document.addEventListener('DOMContentLoaded', function(event) {
 	document.querySelector('#wrapper').classList.remove('loading');
