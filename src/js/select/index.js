@@ -10,4 +10,5 @@ if(!!element) {
 document.querySelector('#currency').addEventListener('change', function () {
 	console.log(this.value);
 	document.cookie = `currency=${this.value}`;
+	document.location.reload();
 });
