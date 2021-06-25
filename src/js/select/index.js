@@ -6,3 +6,8 @@ if(!!element) {
 		searchEnabled: false
 	});
 }
+
+document.querySelector('#currency').addEventListener('change', function () {
+	console.log(this.value);
+	document.cookie = `currency=${this.value}`;
+});
