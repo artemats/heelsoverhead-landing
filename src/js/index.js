@@ -10,3 +10,7 @@ import './select/index';
 document.addEventListener('DOMContentLoaded', function(event) {
 	document.querySelector('#wrapper').classList.remove('loading');
 });
+
+for (let i = 0; i < dropdowns.length; i++) {
+	dropdowns[i].classList.remove('is-open');
+}

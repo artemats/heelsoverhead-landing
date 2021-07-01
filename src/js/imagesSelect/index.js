@@ -48,7 +48,7 @@ if(!!countrySelect) {
 	});
 
 	const closeAllDropdowns = () => {
-		for (let i = 0; i < dropdowns.length; i++) {
+		for(let i = 0; i < dropdowns.length; i++) {
 			dropdowns[i].classList.remove('is-open');
 		}
 	}
