@@ -30,7 +30,6 @@
 		&-body{
 			display: flex;
 			padding-top: 13px;
-			justify-content: center;
 				&-item{
 					display: flex;
 					flex-direction: column;
@@ -43,6 +42,7 @@
 				}
 				@include d(991){
 					padding-top: 20px;
+					justify-content: center;
 				}
 		}
 		&-value{

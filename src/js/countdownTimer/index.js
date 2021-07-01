@@ -27,8 +27,8 @@ class CountDownTimer {
             let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
             let secs = Math.floor((t % (1000 * 60)) / 1000);
-            self.day.innerHTML = ('0' + days).slice(-2);
-            self.hour.innerHTML = ("0" + hours).slice(-2);
+            // self.day.innerHTML = ('0' + days).slice(-2);
+            // self.hour.innerHTML = ("0" + hours).slice(-2);
             self.min.innerHTML = ("0" + mins).slice(-2);
             self.sec.innerHTML = ("0" + secs).slice(-2);
         } else {
