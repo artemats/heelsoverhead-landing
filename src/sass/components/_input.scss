@@ -39,6 +39,7 @@
 					display: block;
 					-webkit-box-shadow: inset 0 0 0 50px var(--color-white);
 					-webkit-text-fill-color: var(--color-black);
+					padding: 0 20px;
 				}
 				#cards-errors{
 					font-size: 12px;
@@ -159,7 +160,7 @@
 				}
 		}
 		&[disabled]{
-			opacity: .4;
+			opacity: .9;
 			pointer-events: none;
 		}
 }
