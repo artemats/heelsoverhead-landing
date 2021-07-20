@@ -12,6 +12,7 @@
 			z-index: -1;
 			pointer-events: none;
 			box-shadow: 0 4px 29px rgba(154, 154, 160, 0.21);
+			border: 1px var(--color-grey-100) solid;
 				&:before,
 				&:after{
 					content: '';

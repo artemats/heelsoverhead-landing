@@ -3,7 +3,7 @@
 		&-content{
 			display: flex;
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
 			justify-content: center;
 			height: 100%;
 			padding-bottom: 47px;
@@ -17,10 +17,12 @@
 					padding-right: 0;
 					padding-bottom: 30px;
 				}
+				@include d(480){
+					align-items: flex-start;
+				}
 		}
 		&-banner{
-			margin-top: 94px;
-			margin-left: -5px;
+			margin-top: 60px;
 			height: 794px;
 				picture, img{
 					width: 100%;
@@ -42,27 +44,51 @@
 					margin-top: 0;
 				}
 		}
+		&-title{
+			padding-top: 70px;
+			text-align: right;
+				.h-1{
+					@include d(1200){
+						max-width: 470px;
+						margin-left: auto;
+					}
+					@include d(991){
+						max-width: 100%;
+						margin-left: 0;
+					}
+				}
+				@include d(991){
+					padding-top: 0;
+					text-align: left;
+				}
+		}
 		.row{
 				&-column{
 					&:nth-child(1){
-						max-width: 40%;
+						max-width: 50%;
 							@include d(1420){
 								max-width: 45%;
 							}
 							@include d(1300){
 								max-width: 50%;
 							}
+							@include d(1200){
+								max-width: 60%;
+							}
 							@include d(991){
 								max-width: 100%;
 							}
 					}
 					&:nth-child(2){
-						max-width: 60%;
+						max-width: 50%;
 							@include d(1420){
 								max-width: 55%;
 							}
 							@include d(1300){
 								max-width: 50%;
+							}
+							@include d(1200){
+								max-width: 40%;
 							}
 							@include d(991){
 								max-width: 100%;
@@ -107,6 +133,17 @@
 		.btn{
 			transition: opacity .6s ease, transform .6s ease;
 			transition-delay: .4s;
+		}
+		.form{
+			padding-top: 52px;
+				&-row-column {
+					&:nth-child(2) {
+						max-width: 272px;
+							@include d(575){
+								max-width: 100%;
+							}
+					}
+				}
 		}
 		@include d(991){
 			padding-top: 200px;
