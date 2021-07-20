@@ -12,6 +12,7 @@ Settings
 Libs
  */
 @import "../../node_modules/choices.js/public/assets/styles/choices.min.css";
+@import "../../node_modules/plyr/dist/plyr.css";
 
 /*
 Components
@@ -28,6 +29,7 @@ Components
 @import "components/tabs";
 @import "components/dropdown";
 @import "components/select";
+@import "components/video";
 
 /*
 Pages

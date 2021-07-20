@@ -86,6 +86,11 @@ body{
 							height: 90vw;
 						}
 				}
+				&.__video{
+					@include d(575){
+						height: auto;
+					}
+				}
 				img{
 					height: 100%;
 					width: 100%;

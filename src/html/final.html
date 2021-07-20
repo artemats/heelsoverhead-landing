@@ -17,7 +17,7 @@
   <link rel="preload" href="fonts/Sacramento-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="fonts/Sacramento-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" />
 
-  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs{opacity:0;transform:translateY(3px)}</style>
+  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs, .loading .hero .btn, .loading .subscription-content{opacity:0;transform:translateY(3px)}</style>
 
 </head>
 <body>
@@ -65,7 +65,7 @@
               <div class="countdown-title">
                 <p>Your <u>limited time offer</u> will expire in ...</p>
               </div>
-              <div class="timer-body" data-counter-container data-date="July 01, 2021 23:00:00">
+              <div class="timer-body" data-counter-container data-date="July 20, 2021 23:00:00">
 <!--                <div class="timer-body-item">-->
 <!--                  <span class="timer-value" data-counter="day">00</span>-->
 <!--                  <span class="timer-label" data-counter="day">Days</span>-->
@@ -88,8 +88,19 @@
         </div>
       </div>
     </div>
-    <div class="section-banner __right scale">
-      <img src="../images/final/banner-final.jpg" alt="Count me in!" />
+    <div class="section-banner __right scale __video">
+<!--      <img src="../images/final/banner-final.jpg" alt="Count me in!" />-->
+      <div id="video">
+        <video id="player"
+               preload="metadata"
+               playsinline
+               webkit-playsinline
+               loop
+               data-poster="../img/poster_food.jpeg">
+          <source src="../video/Fit_With_Her_21d_Challenge.webm" type="video/webm" />
+          <source src="../video/Fit_With_Her_21d_Challenge.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   </section>
   <footer class="footer">
