@@ -1,7 +1,10 @@
 import Plyr from "plyr";
 
-const player = new Plyr(document.querySelector('#player'), {
-	controls: ['play-large']
-});
+const playerDOM = document.querySelector('#player');
+if(!!playerDOM) {
+	const player = new Plyr(playerDOM, {
+		controls: ['play-large']
+	});
 
-player.play();
+	player.play();
+}
