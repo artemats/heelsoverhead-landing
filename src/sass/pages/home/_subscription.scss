@@ -24,6 +24,7 @@
 			max-width: 680px;
 			position: relative;
 			margin-top: 80px;
+			transition: opacity .6s ease, transform .6s ease;
 				&-form{
 					transition: opacity .4s ease, filter .4s ease;
 				}
