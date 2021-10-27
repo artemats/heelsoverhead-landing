@@ -2,20 +2,50 @@
 	&.__inner{
 		.hero{
 			&-content{
-				height: 100vh;
+				//height: 100vh;
 				min-height: 800px;
 				padding-bottom: 0;
-				padding-top: 45px;
+				padding-top: 208px;
 				align-items: flex-start;
+				justify-content: flex-start;
 					&.__default{
-						padding-top: 0;
-						padding-bottom: 42px;
-						pointer-events: none;
+						position: relative;
+						color: var(--color-white);
+						padding-bottom: 155px;
+							&:before{
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 50vw;
+								height: 100%;
+								background-color: var(--color-black);
+									@include d(991){
+										left: -50vw;
+										right: -50vw;
+										width: auto;
+									}
+							}
+							.hero-content-box{
+								padding-left: 175px;
+									@include d(1300){
+										padding-left: 100px;
+									}
+									@include d(1200){
+										padding-left: 50px;
+									}
+									@include d(991){
+										padding-left: 0;
+										padding-top: 50px;
+									}
+							}
+							ul{
+								padding: 15px 0;
+								margin: 5px 0 30px;
+							}
 							@include d(991){
 								padding-right: 0;
 								align-items: center;
-								padding-bottom: 0;
-								margin-bottom: -30px;
 							}
 					}
 					.list{
@@ -33,8 +63,11 @@
 								margin-top: 20px;
 							}
 					}
+					.h-4{
+						margin-top: 20px;
+					}
 					@include max-height-min-width(800, 991) {
-						padding-top: 105px;
+						padding-top: 208px;
 					}
 					@include d(1200){
 						min-height: 900px;

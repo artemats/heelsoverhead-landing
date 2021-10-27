@@ -87,9 +87,25 @@ body{
 						}
 				}
 				&.__video{
-					@include d(575){
-						height: auto;
-					}
+					left: auto;
+					right: 0;
+					top: 460px;
+					width: 50vw;
+					height: auto;
+					bottom: 0;
+						&:before{
+							background-color: transparent;
+						}
+						@include d(991){
+							position: relative;
+							width: 100%;
+							top: 0;
+							margin-top: 40px;
+							display: none;
+						}
+						@include d(575){
+							height: auto;
+						}
 				}
 				img{
 					height: 100%;
