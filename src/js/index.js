@@ -10,4 +10,8 @@ import './toggleVideo/index';
 
 document.addEventListener('DOMContentLoaded', function(event) {
 	document.querySelector('#wrapper').classList.remove('loading');
+	const hiddenElements = document.querySelectorAll('.show-on-load');
+	for(let i = 0; i < hiddenElements.length; i++) {
+		hiddenElements[i].classList.remove('hide');
+	}
 });

@@ -17,7 +17,7 @@
   <link rel="preload" href="fonts/Sacramento-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="fonts/Sacramento-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" />
 
-  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs, .loading .hero .btn, .loading .subscription-content{opacity:0;transform:translateY(3px)}</style>
+  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs, .loading .hero .btn, .loading .subscription-content{opacity:0;transform:translateY(3px)} .loading .show-on-load.hide{opacity: 0;transform:translateY(3px);}</style>
 
 </head>
 <body>
@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="row-column">
-          <div class="hero-content">
+          <div class="hero-content show-on-load hide">
             <h1 class="h-1">Want 25% off your <span class="orange uppercase">MAKE LIFE EASY MEMBERSHIP</span> for 3 months?</h1>
             <h4 class="h-4">Take the hard work out of being healthy with ...</h4>
             <div class="section-banner scale __video">
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="row-column">
-          <div class="hero-content __default">
+          <div class="hero-content __default show-on-load hide">
             <div class="hero-content-box">
               <p class="h-4 orange">Easy meal planning:</p>
               <ul>

@@ -236,6 +236,15 @@ body{
 		}
 }
 
+.show-on-load{
+	transition: opacity .4s ease, transform .4s ease;
+	transition-delay: .2s;
+		&.hide{
+			//opacity: 0;
+			//transform: translateY(3px);
+		}
+}
+
 //.loading .header{
 //	opacity: 0;
 //}
