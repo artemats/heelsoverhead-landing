@@ -74,3 +74,15 @@
 				}
 		}
 }
+
+#card-container{
+	.btn{
+		margin-top: 20px;
+	}
+}
+
+#card{
+	padding: 15px;
+	border: 1px var(--color-grey-100) solid;
+	border-radius: 10px;
+}
