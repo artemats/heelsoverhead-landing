@@ -86,3 +86,19 @@
 	border: 1px var(--color-grey-100) solid;
 	border-radius: 10px;
 }
+
+#error,
+#success{
+	font-family: var(--font-body-medium);
+	font-size: 14px;
+	padding: 5px 0;
+	display: none;
+}
+
+#error{
+	color: var(--color-error);
+}
+
+#success{
+	color: var(--color-success);
+}
