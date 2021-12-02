@@ -89,12 +89,10 @@ body{
 				&.__video{
 					left: auto;
 					right: 0;
-					top: 0;
-					width: 100%;
+					top: 460px;
+					width: 50vw;
 					height: auto;
 					bottom: 0;
-					position: relative;
-					margin-top: 40px;
 						&:before{
 							background-color: transparent;
 						}
@@ -103,6 +101,7 @@ body{
 							width: 100%;
 							top: 0;
 							margin-top: 40px;
+							display: none;
 						}
 						@include d(575){
 							height: auto;

@@ -8,7 +8,11 @@ if(!!document.querySelector('#player')) {
 
 	inView('#player')
 		.on('enter', function () {
-			player.play();
+			setTimeout(() => {
+				// player.play();
+				document.querySelector('.plyr__control').click();
+				player.muted = false;
+			}, 1000);
 		})
 		.on('exit', function () {
 			player.pause();

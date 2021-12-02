@@ -1,0 +1,144 @@
+h1{
+	font-family: var(--font-title);
+	font-size: 36px;
+	//line-height: 2.15em;
+	line-height: 1em;
+	color: inherit;
+		&.orange{
+			color: var(--color-orange);
+		}
+		i{
+			font-style: normal;
+			font-size: 96px;
+			font-family: var(--font-accent);
+			color: var(--color-orange);
+				@include d(1500){
+					font-size: 94px;
+				}
+				@include d(1420){
+					font-size: 80px;
+				}
+				@include d(1150){
+					font-size: 74px;
+				}
+				@include d(480){
+					font-size: 52px;
+				}
+		}
+		strong, b{
+			font-size: 72px;
+			color: var(--color-orange);
+			font-weight: normal;
+			transition-delay: .1s;
+				@include d(1500){
+					font-size: 70px;
+				}
+				@include d(1420){
+					font-size: 56px;
+				}
+				@include d(1150){
+					font-size: 56px;
+				}
+				@include d(480){
+					font-size: 42px;
+				}
+		}
+		i, b, strong{
+			display: inline-block;
+			margin-bottom: 50px;
+			transition: opacity .6s ease, transform .6s ease;
+				@include d(1420){
+					margin-bottom: 40px;
+				}
+				@include d(1150){
+					margin-bottom: 30px;
+				}
+				@include d(480){
+					margin-bottom: 25px;
+				}
+		}
+		span{
+			//display: block;
+			transition: opacity .6s ease, transform .6s ease;
+			transition-delay: .1s;
+		}
+		@include d(1150){
+			font-size: 32px;
+		}
+		@include d(575){
+			font-size: 30px;
+		}
+		@include d(480){
+			font-size: 22px;
+		}
+		@include d(350){
+			font-size: 20px;
+		}
+}
+
+h2{
+	font-size: 36px;
+	font-family: var(--font-title);
+	color: inherit;
+	line-height: .86em;
+		strong, b{
+			font-weight: normal;
+			color: var(--color-orange);
+		}
+		@include d(575){
+			font-size: 32px;
+			line-height: 1.1em;
+		}
+		@include d(480){
+			font-size: 28px;
+		}
+}
+
+h3{
+	font-size: 36px;
+	font-family: var(--font-title);
+	line-height: 1em;
+		@include d(1420){
+			font-size: 32px;
+		}
+		@include d(1200){
+			font-size: 28px;
+		}
+		@include d(767){
+			font-size: 24px;
+		}
+		@include d(480){
+			font-size: 20px;
+		}
+}
+
+h4{
+	font-size: 16px;
+	font-family: var(--font-title-heavy);
+	line-height: 1em;
+}
+
+h5{
+
+}
+
+p, li{
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+		u{
+			white-space: nowrap;
+			position: relative;
+			display: inline-block;
+			text-decoration: none;
+				&:before{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 3px;
+					background-color: var(--color-orange);
+				}
+		}
+}

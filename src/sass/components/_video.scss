@@ -19,6 +19,9 @@
 				background-color: rgba(0, 0, 0, .2);
 			}
 		}
+		&__poster{
+			background-size: cover;
+		}
 		audio, iframe, video{
 			object-fit: cover;
 			object-position: center top;

@@ -10,9 +10,27 @@
 				justify-content: flex-start;
 					&.__default{
 						position: relative;
+						color: var(--color-white);
 						padding-bottom: 155px;
+							&:before{
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 50vw;
+								height: 100%;
+								background-color: var(--color-black);
+									@include d(991){
+										left: -50vw;
+										right: -50vw;
+										width: auto;
+									}
+							}
 							.hero-content-box{
-								padding-left: 100px;
+								padding-left: 175px;
+									@include d(1300){
+										padding-left: 100px;
+									}
 									@include d(1200){
 										padding-left: 50px;
 									}
@@ -32,12 +50,8 @@
 					}
 					.list{
 						max-width: 450px;
-						margin: 38px 0;
+						margin: 38px 0 41px;
 						padding-left: 4px;
-							ul{
-								margin: 0;
-								padding: 0;
-							}
 							@include d(991){
 								max-width: 100%;
 							}
@@ -49,25 +63,8 @@
 								margin-top: 20px;
 							}
 					}
-					.h{
-						&-2{
-							margin-bottom: 40px;
-						}
-						&-4{
-							margin-top: 20px;
-						}
-					}
-					.countdown{
-						position: absolute;
-						z-index: 1;
-						left: 0;
-						top: 50%;
-						transform: translateY(-50%);
-						padding-left: 30px;
-						pointer-events: none;
-					}
-					.list-item-title{
-						margin: 0;
+					.h-4{
+						margin-top: 20px;
 					}
 					@include max-height-min-width(800, 991) {
 						padding-top: 208px;

@@ -1,0 +1,78 @@
+.countdown{
+	padding-left: 100px;
+	color: var(--color-white);
+		&-title{
+			position: relative;
+			font-family: var(--font-title);
+			font-size: 16px;
+				@include d(575){
+					font-size: 12px;
+				}
+		}
+		@include d(1300){
+			padding-left: 90px;
+		}
+		@include d(1200){
+			padding-left: 80px;
+		}
+		@include d(991){
+			color: var(--color-black);
+			padding: 50px;
+			box-shadow: 0 4px 29px rgba(154, 154, 160, 0.21);
+			background-color: var(--color-white);
+		}
+		@include d(575){
+			padding: 40px 30px;
+		}
+}
+
+.timer{
+		&-body{
+			display: flex;
+			padding-top: 13px;
+				&-item{
+					display: flex;
+					flex-direction: column;
+						&:not(:last-child){
+							margin-right: 40px;
+								@include d(480){
+									margin-right: 20px;
+								}
+						}
+				}
+				@include d(991){
+					padding-top: 20px;
+					justify-content: center;
+				}
+		}
+		&-value{
+			font-size: 72px;
+			font-family: var(--font-title);
+			display: inline-block;
+			line-height: .96em;
+				@include d(1420){
+					font-size: 52px;
+					width: 66px;
+				}
+				@include d(575){
+					font-size: 42px;
+					width: 50px;
+				}
+				@include d(480){
+					font-size: 32px;
+					width: 44px;
+				}
+		}
+		&-label{
+			font-size: 12px;
+			text-transform: uppercase;
+			font-family: var(--font-body-medium);
+				@include d(991){
+					color: var(--color-grey-200);
+					font-size: 11px;
+				}
+				@include d(575){
+					font-size: 10px;
+				}
+		}
+}

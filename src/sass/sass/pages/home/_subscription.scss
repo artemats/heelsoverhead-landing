@@ -5,7 +5,7 @@
 	color: var(--color-white);
 		&-banner{
 			max-width: 388px;
-			height: 486px;
+			height: 567px;
 				picture, img{
 					width: 100%;
 					height: 100%;
@@ -13,18 +13,12 @@
 					object-position: center;
 				}
 				@include d(991){
-					min-height: 150px;
-					height: auto;
-					align-items: flex-start;
-					max-width: 100%;
-					width: 100%;
-					margin-bottom: 40px;
-					//display: none;
+					display: none;
 				}
 		}
 		&-content{
-			padding: 52px 50px 52px 64px;
-			max-width: 680px;
+			padding: 52px 50px 52px 56px;
+			max-width: 580px;
 			position: relative;
 			margin-top: 80px;
 			transition: opacity .6s ease, transform .6s ease;
@@ -133,8 +127,14 @@
 							}
 						}
 				}
+				.form{
+					max-width: 300px;
+						@include d(575){
+							max-width: 100%;
+						}
+				}
 				@include d(1200){
-					padding: 25px 20px 52px 50px;
+					padding: 25px 20px 52px 0;
 					margin-top: 20px;
 				}
 				@include d(991){
@@ -146,9 +146,6 @@
 			&-column{
 				&:nth-child(1){
 					max-width: 40%;
-						@include d(991){
-							max-width: 100%;
-						}
 				}
 				&:nth-child(2){
 					max-width: 60%;
@@ -173,36 +170,42 @@
 				}
 		}
 		.hero-content{
+			padding-left: 50px;
 			ul{
 				padding: 13px 0 10px 12px;
-				margin-top: 21px;
-				@include d(480){
-					padding: 15px 0 10px 10px;
-					margin-top: 10px;
-				}
+				margin: 20px 0;
+					@include d(480){
+						padding: 15px 0 10px 10px;
+						margin-top: 10px;
+					}
 			}
 			li{
 				font-size: 16px;
-				font-family: var(--font-title);
-				margin-bottom: 7px;
+				font-family: var(--font-body);
 				position: relative;
-				padding-left: 13px;
+				padding-left: 20px;
 				transition: opacity .6s ease, transform .6s ease;
-				&:before{
-					content: '';
-					position: absolute;
-					top: 8px;
-					left: 0;
-					width: 3px;
-					height: 3px;
-					border-radius: 50%;
-					background-color: currentColor;
-				}
-				@for $i from 1 through 9 {
-					&:nth-child(#{$i}) {
-						transition-delay: $i * 0.1 + s;
+					&:before{
+						content: '';
+						position: absolute;
+						top: 7px;
+						left: 0;
+						width: 7px;
+						height: 7px;
+						border-radius: 50%;
+						background-color: currentColor;
 					}
-				}
+					&:not(:last-child){
+						margin-bottom: 10px;
+					}
+					@for $i from 1 through 9 {
+						&:nth-child(#{$i}) {
+							transition-delay: $i * 0.1 + s;
+						}
+					}
+			}
+			@include d(991){
+				padding-left: 0;
 			}
 		}
 		@include d(1200){

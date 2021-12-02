@@ -1,0 +1,104 @@
+.hero{
+	&.__payment{
+		.row{
+			justify-content: flex-end;
+		}
+		.hero{
+			&-content{
+				padding-left: 128px;
+				justify-content: flex-start;
+				padding-top: 160px;
+				padding-bottom: 120px;
+				min-height: 900px;
+					.btn{
+						margin-top: 0;
+					}
+					.row{
+							&-column{
+								&:not(:last-child){
+									padding-right: 30px;
+										@include d(480){
+											padding-right: 0;
+										}
+								}
+							}
+							@include d(991){
+								flex-direction: row;
+							}
+							@include d(480){
+								flex-direction: column;
+							}
+					}
+					@include d(1420){
+						padding-left: 90px;
+					}
+					@include d(1200){
+						padding-left: 50px;
+					}
+					@include d(991){
+						padding-left: 0;
+						padding-top: 0;
+						min-height: 600px;
+					}
+			}
+		}
+		.section-banner{
+			@include d(991){
+				position: absolute;
+				height: 70vw;
+			}
+		}
+		@include d(991){
+			padding-top: calc(70vw + 50px);
+		}
+		@include d(575){
+			padding-top: calc(70vw + 50px);
+		}
+		@include d(480){
+			padding-top: calc(70vw + 50px);
+		}
+	}
+}
+
+.payment{
+		&-detail{
+			display: flex;
+			align-items: center;
+			margin-bottom: 25px;
+				&-icon{
+					width: 80px;
+					margin-right: 20px;
+				}
+				&-title{
+					font-size: 14px;
+				}
+		}
+}
+
+#card-container{
+	.btn{
+		margin-top: 20px;
+	}
+}
+
+#card{
+	padding: 15px;
+	border: 1px var(--color-grey-100) solid;
+	border-radius: 10px;
+}
+
+#error,
+#success{
+	font-family: var(--font-body-medium);
+	font-size: 14px;
+	padding: 5px 0;
+	display: none;
+}
+
+#error{
+	color: var(--color-error);
+}
+
+#success{
+	color: var(--color-success);
+}

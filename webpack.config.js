@@ -100,7 +100,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
         compress: true,
-        port: 9000,
+        port: 8000,
         historyApiFallback: true,
     },
     plugins: [
@@ -113,35 +113,55 @@ module.exports = {
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/html', 'index.html'),
             minify: {
-                collapseWhitespace: false
+                collapseWhitespace: false,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
             },
         }),
         new HtmlWebpackPlugin({
             filename: 'final.html',
             template: path.resolve(__dirname, 'src/html', 'final.html'),
             minify: {
-                collapseWhitespace: false
+                collapseWhitespace: false,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
             },
         }),
         new HtmlWebpackPlugin({
             filename: 'payment.html',
             template: path.resolve(__dirname, 'src/html', 'payment.html'),
             minify: {
-                collapseWhitespace: false
+                collapseWhitespace: false,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
             },
         }),
         new HtmlWebpackPlugin({
             filename: '404.html',
             template: path.resolve(__dirname, 'src/html', '404.html'),
             minify: {
-                collapseWhitespace: false
+                collapseWhitespace: false,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
             },
         }),
         new HtmlWebpackPlugin({
             filename: 'success.html',
             template: path.resolve(__dirname, 'src/html', 'success.html'),
             minify: {
-                collapseWhitespace: false
+                collapseWhitespace: false,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
             },
         }),
     ],

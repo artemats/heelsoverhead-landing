@@ -17,7 +17,7 @@
   <link rel="preload" href="fonts/Sacramento-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="fonts/Sacramento-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" />
 
-  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs, .loading .hero .btn, .loading .subscription-content{opacity:0;transform:translateY(3px)}</style>
+  <style>.loading .header{opacity:0}.loading .h-1 b,.loading .h-1 i,.loading .h-1 span,.loading .h-1 strong,.loading .h-4,.loading .hero .list-item,.loading .hero li,.loading .hero.__inner .hero-content .btn,.loading .price-new,.loading .price-old,.loading .tabs, .loading .hero .btn, .loading .subscription-content{opacity:0;transform:translateY(3px)} .loading .show-on-load.hide{opacity: 0;transform:translateY(3px);}</style>
 
 </head>
 <body>
@@ -33,73 +33,77 @@
     <div class="container">
       <div class="row">
         <div class="row-column">
-          <div class="hero-content">
-            <h1 class="h-1"><i>One more thing</i> <span>From 28 June get 3 weeks of:</span></h1>
-            <div class="list">
-              <div class="list-item">
-                <div class="list-item-icon">
-                  <img src="../images/final/1.svg" alt="Dietitian created meal plans, shopping lists & 48 recipes." />
-                </div>
-                <p class="list-item-title">Dietitian created meal plans, shopping lists & 48 recipes.</p>
+          <div class="hero-content show-on-load hide">
+            <h1 class="h-1 orange">One more thing From 28 June get 3 weeks of:</h1>
+            <div class="section-banner scale __video">
+              <!--      <img src="../images/final/banner-final.jpg" alt="Count me in!" />-->
+              <div id="video">
+                <video id="player"
+                       preload="metadata"
+                       playsinline
+                       webkit-playsinline
+                       loop
+                       muted
+                       data-poster="../img/poster_food.jpeg">
+                  <source src="../video/Fit_With_Her_21d_Challenge.webm" type="video/webm" />
+                  <source src="../video/Fit_With_Her_21d_Challenge.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="list-item">
-                <div class="list-item-icon">
-                  <img src="../images/final/2.svg" alt="10 live & on-demand exercise classes with me, an Exercise Physiologist" />
+              <div class="countdown">
+                <div class="countdown-title">
+                  <p>Your <u>limited time offer</u> will expire in ...</p>
                 </div>
-                <p class="list-item-title">10 live & on-demand exercise classes with me, an Exercise Physiologist</p>
-              </div>
-              <div class="list-item">
-                <div class="list-item-icon">
-                  <img src="../images/final/3.svg" alt="Loads of helpful info on food, fitness and mindset" />
+                <div class="timer-body" data-counter-container data-date="December 2, 2021 23:00:00">
+                  <!--                <div class="timer-body-item">-->
+                  <!--                  <span class="timer-value" data-counter="day">00</span>-->
+                  <!--                  <span class="timer-label" data-counter="day">Days</span>-->
+                  <!--                </div>-->
+                  <!--                <div class="timer-body-item">-->
+                  <!--                  <span class="timer-value" data-counter="hour">00</span>-->
+                  <!--                  <span class="timer-label" data-counter="hour">Hours</span>-->
+                  <!--                </div>-->
+                  <div class="timer-body-item">
+                    <span class="timer-value" data-counter="min">00</span>
+                    <span class="timer-label" data-counter="min">Minutes</span>
+                  </div>
+                  <div class="timer-body-item">
+                    <span class="timer-value" data-counter="sec">00</span>
+                    <span class="timer-label" data-counter="sec">Seconds</span>
+                  </div>
                 </div>
-                <p class="list-item-title">Loads of helpful info on food, fitness and mindset</p>
               </div>
             </div>
-            <h2 class="h-2"><span class="price-old">Valued at: $900</span> <span class="price-new">Only $21</span></h2>
-            <a href="payment.html" class="btn">Count me in!</a>
           </div>
         </div>
         <div class="row-column">
-          <div class="hero-content __default">
-            <div class="countdown">
-              <div class="countdown-title">
-                <p>Your <u>limited time offer</u> will expire in ...</p>
-              </div>
-              <div class="timer-body" data-counter-container data-date="July 20, 2021 23:00:00">
-<!--                <div class="timer-body-item">-->
-<!--                  <span class="timer-value" data-counter="day">00</span>-->
-<!--                  <span class="timer-label" data-counter="day">Days</span>-->
-<!--                </div>-->
-<!--                <div class="timer-body-item">-->
-<!--                  <span class="timer-value" data-counter="hour">00</span>-->
-<!--                  <span class="timer-label" data-counter="hour">Hours</span>-->
-<!--                </div>-->
-                <div class="timer-body-item">
-                  <span class="timer-value" data-counter="min">00</span>
-                  <span class="timer-label" data-counter="min">Minutes</span>
+          <div class="hero-content __default show-on-load hide">
+            <div class="hero-content-box">
+              <h2 class="h-2 orange">Take the hard work out of being healthy with ...</h2>
+              <div class="list">
+                <div class="list-item">
+                  <div class="list-item-icon">
+                    <img src="../images/final/1.svg" alt="Dietitian created meal plans, shopping lists & 48 recipes." />
+                  </div>
+                  <p class="list-item-title">Dietitian created meal plans, shopping lists & 48 recipes.</p>
                 </div>
-                <div class="timer-body-item">
-                  <span class="timer-value" data-counter="sec">00</span>
-                  <span class="timer-label" data-counter="sec">Seconds</span>
+                <div class="list-item">
+                  <div class="list-item-icon">
+                    <img src="../images/final/2.svg" alt="10 live & on-demand exercise classes with me, an Exercise Physiologist" />
+                  </div>
+                  <p class="list-item-title">10 live & on-demand exercise classes with me, an Exercise Physiologist</p>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-icon">
+                    <img src="../images/final/3.svg" alt="Loads of helpful info on food, fitness and mindset" />
+                  </div>
+                  <p class="list-item-title">Loads of helpful info on food, fitness and mindset</p>
                 </div>
               </div>
+              <h2 class="h-2"><span class="price-old">Valued at: $900</span> <span class="price-new">Only $21</span></h2>
+              <a href="payment.html" class="btn">Count me in!</a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="section-banner __right scale __video">
-<!--      <img src="../images/final/banner-final.jpg" alt="Count me in!" />-->
-      <div id="video">
-        <video id="player"
-               preload="metadata"
-               playsinline
-               webkit-playsinline
-               loop
-               data-poster="../img/poster_food.jpeg">
-          <source src="../video/Fit_With_Her_21d_Challenge.webm" type="video/webm" />
-          <source src="../video/Fit_With_Her_21d_Challenge.mp4" type="video/mp4" />
-        </video>
       </div>
     </div>
   </section>

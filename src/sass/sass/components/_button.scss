@@ -1,0 +1,18 @@
+.btn{
+	height: 48px;
+	line-height: 48px;
+	background-color: var(--color-orange);
+	color: var(--color-white);
+	border-radius: 10px;
+	border: none;
+	transition: background-color .4s ease;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: var(--font-body-bold);
+	padding: 0 52px;
+		@include hover(991){
+			&:hover{
+				background-color: var(--color-orange-hover);
+			}
+		}
+}
