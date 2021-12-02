@@ -10,19 +10,7 @@
 .plyr{
 	height: 100%;
 		&__poster{
-			background-color: var(--color-black);
-		}
-		&__video{
-			background: var(--color-black);
-				&-wrapper{
-					background: var(--color-black);
-						&:before{
-							background-color: transparent;
-						}
-				}
-		}
-		&--video{
-			background: var(--color-black);
+			background-size: cover;
 		}
 		audio, iframe, video{
 			object-fit: contain;

@@ -13,7 +13,13 @@
 					object-position: center;
 				}
 				@include d(991){
-					display: none;
+					min-height: 150px;
+					height: auto;
+					align-items: flex-start;
+					max-width: 100%;
+					width: 100%;
+					margin-bottom: 40px;
+					//display: none;
 				}
 		}
 		&-content{
@@ -146,6 +152,9 @@
 			&-column{
 				&:nth-child(1){
 					max-width: 40%;
+						@include d(991){
+							max-width: 100%;
+						}
 				}
 				&:nth-child(2){
 					max-width: 60%;
